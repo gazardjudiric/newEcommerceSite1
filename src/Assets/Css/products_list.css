@@ -1,0 +1,305 @@
+/* *********************************************** Start HomeProductsList1 */
+.product1 {
+    margin-bottom: 60px;
+}
+.product1Text {
+text-align: center;
+}
+.product1Text div > h2 {
+    color: #1a1a1a;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    line-height: 1.2;
+    font-weight: 700;
+    font-size: 36px;
+} 
+.product1Text div > span {
+    color: #7f85a8;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    display: block;
+}
+.bloc-tabs {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+.tabs {
+    padding: 20px 28px;
+    font-size: 15px;
+    text-transform: capitalize;
+    margin-bottom: 37px;
+    display: block;
+    color: #010a44;
+    cursor: pointer;
+}
+.active-tabs {
+    border-bottom: 2px solid #fd8f5f;
+    color:  #fd8f5f !important;
+}
+.bloc-tabs::before {
+    position: absolute;
+    content: "";
+    width: 80%;
+    height: 2px;
+    background: #e7ebf2;
+    bottom: 37px;
+    z-index: -1;
+}
+/* *********************************************** End HomeProductsList1 */
+
+/* *********************************************** Start HomeProductsList2 */
+.product2 {
+    padding-top: 50px;
+    margin-bottom: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.product2Text {
+text-align: center;
+margin-bottom: 40px;
+}
+.product2Text div > h2 {
+    color: #1a1a1a;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    line-height: 1.2;
+    font-weight: 700;
+    font-size: 36px;
+} 
+.product2Text div > span {
+    color: #7f85a8;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    display: block;
+    padding: 0 30px;
+}
+.discoverMoreOpenProductList2 {
+    width: 30% !important;
+    display: flex;
+    justify-content: center;
+}
+
+                                           /*  */
+.product2Card {
+    display: flex;
+    justify-content: center;
+}
+.product2Card >div {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 85%;
+}
+.product2Card >div .card {
+    border: 1px solid #e7ebf2;
+    margin: 0 15px;
+}
+.product2Card >div .card :nth-child(1) {
+    width: 100%;
+    margin-bottom: 12px;
+}
+.product2Card >div .card >:nth-child(2) {
+    margin-bottom: 20px;
+}
+.product2Card >div .card >:nth-child(2) h3 a {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.7;
+    color: #1a1a1a;  
+} 
+.product2Card >div .card >:nth-child(2) span {
+    color: #670000;
+    font-size: 20px;
+    font-weight: 600;
+}
+.product2 >:nth-child(3) {
+    margin-top: 40px;
+    width: 15%;
+    background-color: white;
+    border: solid 1px #fd8f5f;
+    color: #fd8f5f;
+    transition: background-color 1s linear;
+    transform: translate(0 10px);
+}
+.product2 >:nth-child(3):hover {
+    background-color: #fd8f5f; 
+    color: white;
+    transform: translate(0 10px);
+}
+/* *********************************************** End HomeProductsList2 */ 
+
+/* *********************************************** Start HomeProductList3 */
+.product3 {
+    padding-top: 30px;
+    margin-bottom: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.product3Text {
+text-align: center;
+margin-bottom: 40px;
+}
+.product3Text div > h2 {
+    color: #1a1a1a;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    line-height: 1.2;
+    font-weight: 700;
+    font-size: 36px;
+} 
+.product3Text div > span {
+    color: #7f85a8;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    display: block;
+    padding: 0 30px;
+}
+.discoverMoreOpenProductList3 {
+    width: 30% !important;
+    display: flex;
+    justify-content: center;
+}
+
+                                           /*  */
+.product3Card {
+    display: flex;
+    justify-content: center;
+}
+.product3Card >div {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 85%;
+}
+.product3Card >div .card {
+    border: 1px solid #e7ebf2;
+    margin: 0 15px;
+}
+.product3Card >div .card :nth-child(1) {
+    width: 100%;
+    margin-bottom: 12px;
+}
+.product3Card >div .card >:nth-child(2) {
+    margin-bottom: 20px;
+}
+.product3Card >div .card >:nth-child(2) h3 a {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.7;
+    color: #1a1a1a;  
+} 
+.product3Card >div .card >:nth-child(2) span {
+    color: #670000;
+    font-size: 20px;
+    font-weight: 600;
+}
+.product3 >:nth-child(3) {
+    margin-top: 40px;
+    width: 15%;
+    background-color: white;
+    border: solid 1px #fd8f5f;
+    color: #fd8f5f;
+    transition: background-color 1s linear;
+    transform: translate(0 10px);
+}
+.product3 >:nth-child(3):hover {
+    background-color: #fd8f5f; 
+    color: white;
+    transform: translate(0 10px);
+}
+/* *********************************************** End HomeProductList3 */
+
+
+
+
+/* ******************** Start Responsive */
+
+/* Desktop >= 922px */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    
+    
+} 
+
+/* Tablette >= 768px */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+
+}
+
+/* Phone1 >= 576px */
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+    .product1Text div > h2 {
+        /* color: #1a1a1a; */
+        /* text-transform: uppercase; */
+        /* margin-bottom: 20px; */
+        /* line-height: 1.2; */
+        /* font-weight: 700; */
+        font-size: 32px;
+    } 
+    .tabs {
+        padding: 18px 18px;
+        /* font-size: 15px; */
+        /* text-transform: capitalize; */
+        /* margin-bottom: 37px; */
+        /* display: block; */
+        /* color: #010a44; */
+        /* cursor: pointer; */
+    }
+    .bloc-tabs::before {
+        /* position: absolute; */
+        /* content: ""; */
+        width: 80%;
+        /* height: 2px; */
+        /* background: #e7ebf2; */
+        /* bottom: 37px; */
+        /* z-index: -1; */
+    }
+}
+
+/* Phone2 < 575px */
+@media (max-width: 575px) {
+    .tabs {
+        padding: 18px 18px;
+        /* font-size: 15px; */
+        /* text-transform: capitalize; */
+        /* margin-bottom: 37px; */
+        /* display: block; */
+        /* color: #010a44; */
+        /* cursor: pointer; */
+    }
+    .bloc-tabs::before {
+        /* position: absolute; */
+        /* content: ""; */
+        width: 100%;
+        /* height: 2px; */
+        /* background: #e7ebf2; */
+        /* bottom: 37px; */
+        /* z-index: -1; */
+    }
+    .product1Text div > h2 {
+        /* color: #1a1a1a; */
+        /* text-transform: uppercase; */
+        /* margin-bottom: 20px; */
+        /* line-height: 1.2; */
+        /* font-weight: 700; */
+        font-size: 28px;
+    }
+    .product1Text div > span {
+        margin: 0 10px;
+    }
+    .product2Text div > h2 {
+        font-size: 28px;
+    }
+    .product3Text div > h2 {
+        font-size: 28px;
+    }  
+}
+

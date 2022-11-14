@@ -1,0 +1,419 @@
+ /* *************************La nav bar */
+.nav {
+    background-color: #f2e1d9;
+    width: 100%;
+    height: 92px;
+    position: relative;
+    display: flex;
+    padding-top: 0px;
+    justify-content: right;
+}
+.activeNav {
+    position: fixed;
+    top: 0;
+    z-index: 50;
+    animation: navAnim 0.3s ;
+}
+@keyframes navAnim {
+    from{
+        transform: translateY(-100px) ;
+    }
+    to{
+        transform: translateY(0) ;
+    }
+}
+.returnTop {
+    position: fixed;
+    right: 31px;
+    bottom: 18px;
+    height: 50px;
+    width: 50px;
+    color: #fff;
+    background-color: #fd8f5f;
+    font-size: 20px;
+    border-radius: 50%;
+    box-shadow: 0 0 10px 3px rgba(108,98,98,.2);
+    visibility: hidden;
+    opacity: 0;
+    scale: 0;
+    transition: all 0.7s ease;
+    cursor: pointer;
+}
+.returnTopActive {
+    visibility: initial;
+    opacity: 1;
+    scale: 1;
+}
+
+.navContent {
+    width: 100%;
+    padding-left: 145px;
+    padding-right: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.responsiveNav {
+    position:absolute;
+    top: 80px;
+    left: 5px;
+    width: 98%;
+    z-index: 9999 !important;
+    background-color: #4c4c4c;
+    height: auto;
+    padding: 10px 0;
+    visibility: hidden;
+}
+.responsiveNav > :nth-child(1) {
+   display: flex;
+   justify-content: right;
+}
+.barsBtn {
+    margin: 0 6px;
+    background-color: #fd8f5f;
+    border: none;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    gap: 7px;
+    cursor: pointer;
+}
+.barsBtn > span {
+    color: #fff;
+    font-weight: 700;
+    text-shadow: 0 1px 3px #000;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+.barsBtn > :last-child {
+    color: #fff;
+    font-size: 20px;
+}
+.responsiveNav ul {
+    margin: 0 20px;
+    height: 0;
+    visibility: hidden;
+}
+.openMenu {
+    height: auto !important;
+    visibility: inherit !important;
+}
+.responsiveNav ul li {
+    list-style: none ;
+}
+.responsiveNav ul li .responsiveNavLink {
+    width: 100%;
+    padding: 7px 0;
+    color: #fff;
+    display: inline-block;
+}
+.responsiveNav ul li:hover .responsiveNavLink {
+    background-color:#c2b6bb;
+    border-radius: 6px;
+    color: #222 !important;
+}
+.responsiveNavLink {
+    color: white;
+}
+
+/* ******************La nav bar logo  */
+.navContentLogo {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 9;
+    height: 100%;
+}
+.imgLogo {
+    width: 75%;
+}
+.navContentLogo2 {
+    position: absolute; 
+    left: 25px;
+    top: 8px;
+    z-index: 9;
+}
+.imgLogo2 {
+    width: 100%; 
+    overflow: hidden;  
+}
+/* ********************La nav bar Onglets*/
+.navContentLinks {
+    display: flex;
+}
+.navContentLinks ul {
+    display: flex;
+    justify-content: space-between;
+    gap: 3px;
+    list-style:  none;
+
+}
+.navContentLinks ul li {
+    display: flex;
+    position: relative;
+    z-index: 1;
+}
+.navContentLinks ul li .navContentLink {
+    color: #1D2547;;
+    font-weight: 700;
+    font-size: 14px;
+    padding: 39px 20px;
+    cursor: pointer;
+    width: 100%;
+}
+.navContentLinks ul li:hover .navContentLink {
+    color: #fd8f5f;
+}
+.pageMenu {
+    position: absolute;
+    left: 0;
+    top: 90%;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    width: 170px;
+    box-shadow: 0 0 10px 3px rgba(0,0,0,.05);
+    padding: 17px 0;
+    border-top: 3px solid #fd8f5f;
+    border-radius: 5px 5px 0 0;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+}
+.navContentLinks ul li:hover .pageMenu {
+    visibility: visible;
+    opacity: 1;
+    top: 99%;
+}
+.pageMenu > li {
+    margin-left: 7px;
+}
+.pageMenu > li > :only-child {
+   padding: 6px 10px;
+   font-size: 16px;
+   text-transform: capitalize;
+   color: #1D2547;
+   font-weight: 700;
+   transition: padding-left 0.3s;
+}
+.pageMenu > li:hover :only-child {
+    color: #fd8f5f;
+    padding-left: 14px;
+}
+/* La nav bar Recherche, compte et shop  */
+.navContentSearch {
+    display: flex;
+    flex-direction: column;
+}
+.navContentSearch ul{
+    display: flex;
+    list-style: none;
+    gap: 50px;
+    align-items: center;
+    justify-content: space-between;
+}
+.navContentSearch ul >:nth-child(1){
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+    border-bottom: 1px solid #c2b6bb;
+}
+.navContentSearch ul > :nth-child(1) > input {
+    border-style: none;
+    padding: 10px 0;
+    background-color: transparent;
+    font-size: 16px;
+    margin-right: 20px;
+}
+.navContentSearch ul >:nth-child(1) input:focus {
+   outline: none;
+}
+.navContentSearchIcon {
+    display: flex;
+    font-size: 20px;
+    justify-content: center;
+    align-items: center;
+    margin: auto 0;
+}
+.navContentSearch ul >:nth-child(2) >a {
+    color: black;
+    font-size: 14px;
+    font-weight: 700;
+    white-space: nowrap;
+}
+.navContentSearch ul >:nth-child(2) >a:hover{
+    color: #fd8f5f;
+}
+.navContentSearch ul >:nth-child(3) >:nth-child(2){
+    background-color: #fd8f5f;
+    border-radius: 10px;
+    padding: 0px 5px;
+    color: white;
+    position: absolute;
+    transform: translate(-10px, 13px);
+}
+
+/* ******************** Start Responsive */
+
+/* Desktop >= 922px */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .navContentLinks ul li .navContentLink {
+        padding: 39px 9px;
+    }
+    .navContentSearch ul{
+        gap: 30px;
+    }
+    .navContentLogo2 {
+        position: absolute; 
+        left: 10px;
+        top: 8px;
+        z-index: 9;
+    }
+    
+} 
+
+/* Tablette >= 768px */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .navContentLogo {
+        overflow: hidden;
+    }
+    .imgLogo {
+        width: 62%;
+    }
+    .imgLogo2 {
+        width: 70%; 
+    }
+    .responsiveNav {
+        visibility: inherit;
+    }
+    .navContentLinks ul {
+        height: 0;
+        visibility: hidden;
+    }
+    .navContentSearch ul > :nth-child(1) > input {
+        margin-right: 50px;
+        gap: 30px;
+    }
+    .navContent {
+        justify-content:right;
+        padding-right: 100px;
+    }
+    .navContentLogo2 {
+        position: absolute; 
+        left: 15px;
+        top: 15px;
+        z-index: 9;
+    }
+}
+
+/* Phone1 >= 576px */
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+    .nav {
+        height: 82px;
+    }
+    .navContentLogo {
+        overflow: hidden;
+    }
+    .imgLogo {
+        width: 56%;
+    }
+    .imgLogo2 {
+        width: 70%; 
+    }
+    .responsiveNav {
+        visibility: inherit;
+        padding: 7px 0;
+    }
+    .navContentLinks ul {
+        height: 0;
+        visibility: hidden;
+    }
+    .navContent {
+        justify-content:right;
+        padding-right: 80px;
+    }
+    .navContentSearch ul{
+        gap: 30px;
+    }
+    .navContentSearch ul > :nth-child(1) > input {
+        margin-right: 0px;
+        font-size: 14px;
+        width: 130px;
+    }
+    .navContentSearchIcon {
+        font-size: 18px;
+        padding: 5px;
+    }
+    .navContentLogo2 {
+        position: absolute; 
+        left: 15px;
+        top: 15px;
+        z-index: 9;
+    }
+    .barsBtn > span {
+        font-size: 15px;
+    }
+    .barsBtn > :last-child {
+        font-size: 15px;
+    }
+}
+
+/* Phone2 < 575px */
+@media (max-width: 575px) {
+    .nav {
+        height: 70px;
+    }
+    .navContentLogo {
+        overflow: hidden;
+    }
+    .imgLogo {
+        width: 45%;
+    }
+    .imgLogo2 {
+        width: 70%; 
+    }
+    .responsiveNav {
+        visibility: inherit;
+        top: 60px;
+        padding: 5px 0;
+    }
+    .navContentLinks ul {
+        height: 0;
+        visibility: hidden;
+    }
+    .navContentSearch {
+        position: absolute;
+        right: 18px;
+        top: 90px;
+        z-index: 25 !important;
+        background-color: rgba(76, 76, 76,0.5);
+        padding: 5px 10px;
+    }
+    .navContentSearch ul{
+        gap: 10px;
+    }
+    .navContentSearch ul >:nth-child(1){
+        border-bottom: 1px solid white;
+    }
+    .navContentSearch ul > :nth-child(1) > input {
+        margin-right: 0px;
+        font-size: 14px;
+        width: 130px;
+        color: white;
+        font-weight: 800;
+    }
+    .navContentSearchIcon {
+        font-size: 18px;
+        padding: 5px;
+        color: white;
+    }
+    .barsBtn > span {
+        font-size: 14px;
+    }
+    .barsBtn > :last-child {
+        font-size: 15px;
+    }
+}
+

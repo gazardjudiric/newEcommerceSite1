@@ -1,0 +1,124 @@
+/* Pour les cards de produits */
+.card {
+    border: 1px solid #e7ebf2;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+}
+.card-img {
+    width: 100%;
+}
+.card-img img{
+    width: 100%;
+}
+.card-title {
+    text-align: center;
+}
+.card-title h3 {
+    padding-top: 15px;
+    margin-bottom: 20px;
+}
+.card-title h3 a {
+    font-size: 16px;
+    font-weight: 600;
+    color: #1a1a1a;  
+} 
+.card-title span {
+    color: #670000;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.content-tabs {
+    display: flex;
+    justify-content: center;
+}
+.homeCards {
+    display: flex;
+    width: 90%;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+.page404 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ******************** Start Responsive */
+
+/* Desktop >= 922px */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    
+    
+} 
+
+/* Tablette >= 768px */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .card {
+        /* border: 1px solid #e7ebf2; */
+        /* padding-bottom: 20px; */
+        /* margin-bottom: 20px; */
+        /* display: flex; */
+        /* flex-direction: column; */
+        /* justify-content: center; */
+        /* align-items: center; */
+        width: 40%;
+    }
+    .homeCards {
+        /* display: flex; */
+        width: 90%;
+        /* justify-content: center; */
+        /* flex-wrap: wrap; */
+        /* gap: 30px; */
+    }
+}
+
+/* Phone1 >= 576px */
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+    .card {
+        /* border: 1px solid #e7ebf2; */
+        /* padding-bottom: 20px; */
+        /* margin-bottom: 20px; */
+        /* display: flex; */
+        /* flex-direction: column; */
+        /* justify-content: center; */
+        /* align-items: center; */
+        width: 47%;
+    }
+    .homeCards {
+        /* display: flex; */
+        width: 90%;
+        /* justify-content: center; */
+        /* flex-wrap: wrap; */
+        /* gap: 30px; */
+    } 
+}
+
+/* Phone2 < 575px */
+@media (max-width: 575px) {
+    .card {
+        /* border: 1px solid #e7ebf2; */
+        /* padding-bottom: 20px; */
+        /* margin-bottom: 20px; */
+        /* display: flex; */
+        /* flex-direction: column; */
+        /* justify-content: center; */
+        /* align-items: center; */
+        width: 85%;
+    }
+    .homeCards {
+        /* display: flex; */
+        /* width: 90%; */
+        /* justify-content: center; */
+        /* flex-wrap: wrap; */
+        /* gap: 30px; */
+    } 
+}
+
+

@@ -1,0 +1,136 @@
+.btn:disabled {
+    background-color: gray;
+}
+.btn:disabled::before {
+    background-color: gray;
+}
+.infoProductHome {
+    display: flex;
+    width: 100%;
+    margin: 0 80px;
+}
+.infoProductImagePart {
+    width: 41%;
+    display: flex;
+    justify-content: center;
+}
+.infoProductImagePart img {
+   width: 90%;
+   height: 90%;
+   object-fit: contain;
+}
+.infoProductInfoPart {
+    width: 40%;
+    padding: 0 35px;
+    margin-left: 6%;
+}
+.infoProductInfoPart h3 {
+    font-size: 24px;
+    font-weight: 700;
+    color: #2a2a2a;
+    margin-bottom: 10px;
+}
+.infoProductInfoPart h2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fd8f5f;
+    margin-bottom: 15px;
+}
+.infoProductInfoPart li {
+    list-style: none;
+    margin-bottom: 10px;
+}
+.infoProductInfoPart ul li a {
+    color: #555;
+    font-size: 14px;
+    font-family: "Poppins", sans-serif;
+}
+.infoProductInfoPart ul li .active {
+    color: #fd8f5f;
+}
+.infoProductInfoPart ul li .active span {
+    color: #555;   
+}
+.infoProductInfoPart p {
+    color: #646d77;
+    font-size: 14px;
+    line-height: 1.4; 
+    border-top: 1px dotted #d5d5d5;
+    padding-top: 20px;
+    margin: 22px 0;    
+}
+.displayAddToCard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #ddd;
+    border-radius: 50px;
+    padding: 6px 15px;
+    width: 30%;
+    margin-top: 37px;
+    margin-bottom: 26px;
+}
+.displayAddToCard span {
+    font-size: 30px;
+    cursor: pointer;
+}
+.displayAddToCard span::selection {
+    text-decoration: none;
+}
+.displayAddToCard input {
+    width: 60px;
+    border: transparent;
+    text-align: center;
+    font-size: 16px;
+}
+.infoProductLike {
+    margin-bottom: 40px;
+    display: flex;
+    align-items: center;
+}
+.infoProductLike a {
+    font-size: 20px;
+    color: #fd8f5f;
+    margin-left: 20px;
+    background-color: #fff;
+    box-shadow: -14.142px 14.142px 20px 0 rgba(0,0,0,.1);
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    text-align: center;
+    line-height: 50px;
+    transition: 0.4s;
+}
+.infoProductLike a:hover {
+   background-color: #fd8f5f;
+   color: #fff;
+}
+.infoProductSocialMedia a {
+   font-size: 20px;
+   margin-left: 20px;
+   color: #fff;
+   border-radius: 50%;
+   width: 50px;
+   height: 50px;
+   display: inline-block;
+   text-align: center;
+   line-height: 50px;
+   transition: 0.4s; 
+}
+.infoProductSocialMedia > :nth-child(1){
+    background-color: #3b5998;
+    margin-left: 0;
+}
+.infoProductSocialMedia > :nth-child(2){
+    background-color: #55acee;
+}
+.infoProductSocialMedia > :nth-child(3){
+    background-color: #0077b5;
+}
+.infoProductSocialMedia a:hover{
+    background-color: #fd8f5f;
+}
+.infoProductSocialMedia {
+    margin-bottom: 60px;
+}

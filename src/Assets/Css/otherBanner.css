@@ -1,0 +1,50 @@
+/* Banner Image */
+.bannerForProduct {
+    position: relative;
+    margin-bottom: 170px;
+}
+.bannerForProduct div img {
+    width: 1324px;
+    height: 250px;
+    object-fit: cover;
+}
+.bannerForProduct::before{
+    position: absolute;
+    width: 98%;
+    height: 252px;
+    content: "";
+    background-color: rgba(7, 5, 4, 0.2);
+    bottom: 3px;
+    left: 0;
+}
+.bannerForProduct::after {
+    position: absolute;
+    width: 87%;
+    height: 330px;
+    background-color: #f2e1d9;
+    content: "";
+    right: 0;
+    top: 0;
+    z-index: -1;
+}
+.bannerForProduct >:nth-child(2) {
+    position: absolute;
+    top: 80px;
+    left: 150px;
+    font-size: 50px;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    z-index: 999;
+}
+.bannerForProduct >:nth-child(3) {
+    position: absolute;
+    top: 150px;
+    left: 150px;
+    color: white;
+    font-weight: 600;
+    text-transform: capitalize;
+    z-index: 999;
+}
+
+

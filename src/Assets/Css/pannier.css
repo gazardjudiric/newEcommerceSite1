@@ -1,0 +1,105 @@
+.pannierHome {
+  display: flex;
+  background-color: #eeeeee;
+  margin-top: 50px;
+  justify-content: space-around;
+  padding-bottom: 70px;
+}
+.pannierInfoProduct {
+  background-color: #fff;
+  width: 65%;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.pannierInfoProductHead {
+  display: flex;
+  align-items: center;
+  width: 95%;
+  justify-content: space-between;
+  border-bottom: 3px solid #fd8f5f;
+  border-radius: 0 0 12px 12px;
+}
+.pannierInfoProductHead > h1 {
+  padding-left: 10px;
+}
+.pannierInfoProductHead > span {
+  padding-right: 10px;
+}
+.pannierInfoProductDetails {
+  display: flex;
+  justify-content: space-between;
+  width: 95%;
+  border-bottom: 3px solid #fd8f5f;
+  border-radius: 0 0 12px 12px;
+}
+.pannierInfoProductDetailsContent {
+  display: flex;
+  gap: 20;
+  padding: 10px 0;
+}
+.pannierInfoProductDetailsContent > :nth-child(1) {
+  width: 250px;
+  height: 200px;
+}
+.pannierInfoProductDetailsContent > :nth-child(1) > img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.pannierInfoProductDetailsContent > :nth-child(2) {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 20px;
+  height: 80%;
+  padding: 20px 10px;
+}
+.pannierInfoProductDetails > :nth-child(2) {
+  height: 70%;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+.pannierInfoProductDetails > :nth-child(2) > :nth-child(1) {
+  font-size: 30px;
+  cursor: pointer;
+}
+.buttonArea {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.displayAddToCardPanier {
+  width: 100%;
+  display: flex;
+  gap: 20px;
+  text-align: center;
+  margin-bottom: 0;
+}
+.btnPanier {
+  margin-top: 39px !important;
+}
+.pannierPay {
+  background-color: #fff;
+  width: 30%;
+  height: 80%;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.pannierPayContent {
+  width: 95%;
+}
+.pannierPayContent > h2 {
+  border-bottom: 3px solid #fd8f5f;
+  border-radius: 0 0 12px 12px;
+  padding-left: 10px;
+}
+.pannierPay ul li {
+  list-style: none;
+}
